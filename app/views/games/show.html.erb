@@ -10,5 +10,12 @@
   <%= @game.description %>
 </p>
 
+<div id="game_highscores_container">
+   <%= render @game.game_highscores %>
+   <div id="form">
+      <%= render 'game_highscores/form' %>
+   </div>
+</div>
+
 <%= link_to 'Edit', edit_game_path(@game) %> |
 <%= link_to 'Back', games_path %>

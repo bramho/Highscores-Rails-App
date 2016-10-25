@@ -1,0 +1,4 @@
+<div class="game_highscore_wrapper">
+   <p><%= game_highscore.score %></p>
+   <%= link_to "Delete", game_game_highscore_path(@game, game_highscore.id), method: :delete, data: { confirm: "Are you sure?" } %>
+</div>

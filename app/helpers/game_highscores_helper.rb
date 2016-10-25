@@ -1,0 +1,2 @@
+module GameHighscoresHelper
+end

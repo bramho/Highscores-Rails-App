@@ -1,0 +1,4 @@
+<%= form_for([@game, @game.game_highscores.build]) do |f| %>
+   <%= f.text_field :score, placeholder: "New Game Highscore" %>
+   <%= f.submit %>
+<% end %>

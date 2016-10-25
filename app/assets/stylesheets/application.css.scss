@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+   font-family: 'Open Sans', sans-serif;
+   background-color: rgba(0,151,163, 0.4);
+   margin: 0;
+   padding: 10px;
+}
+
+.game_highscore_wrapper {
+   padding: 10px;
+
+   &:nth-child(odd) {
+      margin: 0px -10px 0px -10px;
+      padding: 10px 20px 10px 20px;
+      background-color: rgba(0,151,163, 0.4);
+   }
+}
