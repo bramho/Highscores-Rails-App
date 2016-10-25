@@ -6,6 +6,17 @@ class GameHighscoresController < ApplicationController
       redirect_to @game
    end
 
+   def destroy
+      @game_highscore = @game.game_highscores.find(params[:id])
+      if @game_highscore.destroy
+         flash[:success] = "Highscore was deleted."
+      else
+         flash[:error] = "Highscore could not be deleted."
+      end
+
+      redirect_to @game
+   end
+
    private
 
    def set_game
