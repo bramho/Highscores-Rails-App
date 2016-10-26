@@ -10,6 +10,11 @@
   <%= @game.description %>
 </p>
 
+<p>
+   <strong>User:</strong>
+   <%= @game.user.email %>
+</p>
+
 <div id="game_highscores_container">
    <%= render @game.game_highscores %>
    <div id="form">

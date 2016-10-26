@@ -3,6 +3,8 @@ class GameHighscoresController < ApplicationController
 
    def create
       @game_highscore = @game.game_highscores.create(game_highscore_params)
+      @game_highscore.user_id = current_user.id
+
       redirect_to @game
    end
 
